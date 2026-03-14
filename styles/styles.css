@@ -13,7 +13,7 @@ hr {
     color: darkblue;
 }
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
@@ -22,5 +22,30 @@ img {
 }
 
 p {
+    padding: 0;
+}
+
+main {
+    width: 850px;
+}
+
+aside {
+    width: 800px;
+    margin: 30px auto;
+    border: 1px solid rgb(0, 0, 0 / 0.2);
     padding: 10px;
+    background-color: aliceblue;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 5px;
+    border-top: 1px dotted #333;
+    text-align: center;
 }
