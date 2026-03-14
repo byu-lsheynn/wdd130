@@ -6,7 +6,7 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 5px;
 }
 
 hr {
@@ -21,12 +21,16 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
+h1 {
+    color: #000;
+}
+
 p {
     padding: 0;
 }
 
 main {
-    width: 850px;
+    max-width: 850px;
 }
 
 aside {
