@@ -36,7 +36,7 @@ main {
 aside {
     width: 800px;
     margin: 30px auto;
-    border: 1px solid rgb(0, 0, 0 / 0.2);
+    border: 1px solid rgb(0, 0, 0/0.2);
     padding: 10px;
     background-color: aliceblue;
     color: #333;
