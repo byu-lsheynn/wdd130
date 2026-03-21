@@ -1,6 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border: 1px solid rgb(0, 0, 0, 0.2);
+    --box-padding: .5rem;
+    --text-align: center;
+    --image-width: 150px;
+    --main-font: 'Segoe UI', sans-serif;
+    --main-font-size: 1rem;
+}
+
+/* Navigation Bar */
 nav {
     background-color: darkblue;
-    padding: 10px;
+    padding: var(--box-padding)
 }
 
 nav a {
@@ -13,43 +29,64 @@ hr {
     color: darkblue;
 }
 
+/* Main Element */
+main {
+    max-width: 750px;
+}
+
 main img {
-    width: 150px;
+    width: 200px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid #333;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 h1 {
     color: #000;
+    font-family: var(--main-font);
+    padding: var(--box-padding);
 }
 
 p {
-    padding: 0;
+    padding: var(--box-padding);
+    font-family: var(--main-font);
 }
 
-main {
-    max-width: 850px;
-}
-
+/* Aside Element */
 aside {
-    width: 800px;
-    margin: 30px auto;
-    border: 1px solid rgb(0, 0, 0, 0.2);
-    padding: 10px;
-    background-color: aliceblue;
-    color: #333;
+    width: 20em;
     text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    color: #ddd;
 }
 
 aside img {
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 
+/* Footer Element */
 footer {
     margin-top: 5px;
     border-top: 1px dotted #333;
     text-align: center;
+    font-family: var(--main-font);
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
