@@ -41,10 +41,11 @@ footer {
 }
 
 header {
-    /* font */
     background-color: var(--primary);
-    color: #fff;
-    padding: 3px 1rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    overflow: auto;
 }
 
 /* Remove the bullet for the list */
