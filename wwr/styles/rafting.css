@@ -53,10 +53,11 @@ nav li {
     list-style: none;
 }
 
-header nav ul li a {
+header nav a {
     font-family: var(--nav-font);
     color: #fff;
     text-decoration: none;
+    padding: .5rem 1rem;
     font-weight: 500;
 }
 
