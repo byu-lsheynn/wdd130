@@ -1,2 +1,7 @@
    /* --accent: #aee8f5; */
    /* splash light blue - background sections, hover */
+
+   /* display: flex; */
+   /* helps align logo and nav */
+   /* align-items: center; */
+   /* padding: 10px; */

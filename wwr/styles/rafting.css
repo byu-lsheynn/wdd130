@@ -43,6 +43,7 @@ footer {
 header {
     /* font */
     background-color: var(--primary);
+    color: #fff;
 }
 
 /* Remove the bullet for the list */
