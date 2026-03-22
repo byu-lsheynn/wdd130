@@ -1,12 +1,121 @@
 :root {
-    --primary-color: #055a05;
-    /* forest green */
-    --secondary-color: #f4a261;
-    /* warm sand */
-    --accent1-color: #264653;
-    /* dark slate blue */
-    --accent2-color: #e9c46a;
-    /* light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
+    /* Brand Colors */
+    --primary: #1f4e79;
+    /* deep river blue - header, nav bar, buttons */
+    --secondary: #3db6d6;
+    /* aqua blue - highlights, links, accents */
+    --accent: #aee8f5;
+    /* splash light blue - background sections, hover */
+    --highlight: #e94b3c;
+    /* paddle red - CTA buttons, icons */
+    --neutral-dark: #2b2b2b;
+    /* charcoal - text */
+    --neutral-light: #f4f9fb;
+    /* off white - page background */
+
+    /* Fonts */
+    --heading-font: 'Bebas Neue', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --nav-font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font */
+    font-family: var(--body-font);
+    color: var(--neutral-dark);
+
+    /* background */
+    background-color: var(--neutral-light);
+}
+
+header,
+main,
+footer {
+    /* limit page width and set center */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    /* font */
+    background-color: var(--primary);
+    color: var(--neutral-light);
+}
+
+/* Remove the bullet for the list */
+nav li {
+    list-style: none;
+}
+
+nav a {
+    font-family: var(--nav-font);
+    color: var(--neutral-light);
+    text-decoration: none;
+}
+
+nav,
+p,
+section {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+}
+
+/* Company's name - White Water Rafting */
+h1 {
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent);
+    color: var(--neutral-dark);
+}
+
+/* Class Selectors */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero article {
+    /* box */
+    position: absolute;
+    text-align: left;
+    top: 350px;
+    margin: 0 20px;
+    opacity: .8;
+    background-color: var(--highlight);
+    color: var(--neutral-light);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin: 8px 8px 8px 0;
+    padding: 0;
+    border: 1px solid rgb(0, 0, 0, .3);
+}
+
+/* Footer */
+.socialmedia a {
+    text-decoration: none;
 }
