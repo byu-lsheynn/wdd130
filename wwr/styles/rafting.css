@@ -43,7 +43,6 @@ footer {
 header {
     /* font */
     background-color: var(--primary);
-    color: #ffffff;
 }
 
 /* Remove the bullet for the list */
@@ -53,8 +52,13 @@ nav li {
 
 nav a {
     font-family: var(--nav-font);
-    color: var(--neutral-light);
+    color: #fff;
     text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--secondary)
 }
 
 nav,
