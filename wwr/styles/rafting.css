@@ -6,8 +6,8 @@
     /* aqua blue - highlights, links, accents */
     --accent: #aee8f5;
     /* splash light blue - background sections, hover */
-    --highlight: #e94b3c;
-    /* paddle red - CTA buttons, icons */
+    --highlight: #c73a2e;
+    /* darker red - CTA buttons, icons */
     --neutral-dark: #2b2b2b;
     /* charcoal - text */
     --neutral-light: #f4f9fb;
@@ -28,7 +28,7 @@
 body {
     /* font */
     font-family: var(--body-font);
-    color: var(--neutral-dark);
+    color: #f4f9fb;
 
     /* background */
     background-color: var(--neutral-light);
@@ -45,7 +45,7 @@ footer {
 header {
     /* font */
     background-color: var(--primary);
-    color: var(--neutral-light);
+    color: #fff;
 }
 
 /* Remove the bullet for the list */
@@ -81,7 +81,7 @@ h1 {
     padding: 10px;
     text-align: center;
     opacity: 0.7;
-    background-color: var(--accent);
+    background-color: var(--secondary);
     color: var(--neutral-dark);
 }
 
