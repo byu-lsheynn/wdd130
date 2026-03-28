@@ -147,8 +147,8 @@ h1 {
     top: 350px;
     margin: 0 30px;
     opacity: .8;
-    background-color: rgba(231, 76, 60, 0.9);
-    color: white;
+    background-color: var(--accent-1);
+    color: var(--background);
     padding: 8px;
     border-left: 6px solid #c0392b;
 }
@@ -224,7 +224,7 @@ footer p {
 .socialmedia {
     display: flex;
     gap: 15px;
-    margin-left: none;
+    margin-left: auto;
     text-decoration: none;
 }
 
