@@ -219,6 +219,9 @@ footer p {
     text-align: center;
     margin: 0;
     padding-left: 100px;
+
+    color: var(--background);
+    font-family: var(--nav-font);
 }
 
 .socialmedia {
