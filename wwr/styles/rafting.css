@@ -228,7 +228,7 @@ footer p {
 
     color: var(--background);
     font-family: var(--nav-font);
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .socialmedia {
