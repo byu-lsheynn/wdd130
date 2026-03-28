@@ -73,6 +73,7 @@ header {
     grid-template-columns: 300px 1fr;
 
     background-color: var(--primary);
+    color: var(--background);
     padding: 10px 20px;
 }
 
