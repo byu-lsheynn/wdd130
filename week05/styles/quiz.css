@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 550px;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+h1 {
+    margin: .5rem;
+    color: darkblue;
+    text-align: center;
+}
+
+form {
+    padding: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-color: whitesmoke;
+    height: auto;
+
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-weight: 500;
+}
+
+div {
+    margin: .7rem 2rem;
+    padding: 0 .5rem;
+}
+
+input,
+textarea,
+select {
+    width: 90%;
+    padding: .4rem;
+    margin: .5rem 1rem;
+}
+
+textarea {
+    height: 5rem;
+}
+
+/* CODE tag */
+.sample {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, .15);
+    width: 75%;
+    margin: .7rem auto .5rem;
+    padding: .8rem;
+    background-color: #1f1f1f;
+
+    color: aliceblue;
+}
+
+.insert {
+    padding: 2px 8px;
+    background-color: lightgrey;
+    border-radius: 6px;
+}
+
+button {
+    display: block;
+    width: 90%;
+    margin: 1.5rem auto 0;
+    padding: .8rem;
+    border: 1px solid rgba(0, 0, 0, .15);
+    background-color: navy;
+    border-radius: .2rem;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, .15);
+
+    color: aliceblue;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkblue;
+}
