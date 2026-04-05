@@ -28,49 +28,70 @@
             <h4>+1 999 999 9999</h4>
             <h4>info@whitewater.com</h4>
         </div>
-        <div class="google-map"></div>
-        <div class="form-group">
-            <form action="">
-                <div class="client-detail">
-                    <label for="name">Name</label>
-                    <input type="text" id="name">
-                </div>
-                <div class="client-detail">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                </div>
-                <div class="client-detail">
-                    <label for="purpose">Message Purpose</label>
-                    <div class="radio-button">
-                        <input type="radio" name="purpose" id="inquiry" value="General Inquiry">
-                        <label for="inquiry">General Inquiry</label>
-
-                        <input type="radio" name="purpose" id="questions"
-                          value="Reservation Questions">
-                        <label for="questions">Reservation Questions</label>
-
-                        <input type="radio" name="purpose" id="suggestions"
-                          value="Website Suggestion">
-                        <label for="suggestions">Website Suggestion</label>
+        <div class="grid-group">
+            <div class="map-container">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17825.902135950728!2d-119.99902334130138!3d37.832108174050155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1775404558945!5m2!1sen!2sph"
+                  allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form-group">
+                <form>
+                    <div class="client-detail">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Full Name">
                     </div>
-                </div>
-                <div class="client-detail">
+                    <div class="client-detail">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email address">
+                    </div>
+                    <div class="client-detail">
+                        <label for="purpose">Message Purpose</label>
+                        <div class="radio-buttons">
+                            <div class="radio-list">
+                                <input type="radio" name="purpose" id="inquiry"
+                                  value="General Inquiry">
+                                <label for="inquiry">General Inquiry</label>
+                            </div>
+                            <div class="radio-list">
+                                <input type="radio" name="purpose" id="questions"
+                                  value="Reservation Questions">
+                                <label for="questions">Reservation Questions</label>
+                            </div>
+                            <div class="radio-list">
+                                <input type="radio" name="purpose" id="suggestions"
+                                  value="Website Suggestion">
+                                <label for="suggestions">Website Suggestion</label>
+                            </div>
+                        </div>
+                    </div>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-                </div>
-                <div class="client-detail">
-                    <input type="checkbox" id="subscribe">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                </div>
-                <div class="client-detail">
-                    <button>Get in Touch!</button>
-                </div>
-            </form>
+                    <textarea name="message" id="message" rows="5"
+                      placeholder="Type here"></textarea>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="subscribe">
+                        <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    </div>
+                    <button type="submit">Get in Touch!</button>
+                </form>
+            </div>
         </div>
         <section class="employees">
             <h2>We Are Here to Serve You</h2>
             <div class="emp-profiles">
-                <figure></figure>
+                <figure>
+                    <img src="https://api.dicebear.com/9.x/toon-head/svg?seed=Felix" alt="Felix">
+                    <figcaption>Manager Felix</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://api.dicebear.com/9.x/toon-head/svg?seed=Luna" alt="Luna">
+                    <figcaption>Coordinator Luna</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://api.dicebear.com/9.x/toon-head/svg?seed=Aneka" alt="Aneka">
+                    <figcaption>Field Officer Aneka</figcaption>
+                </figure>
             </div>
         </section>
     </main>

@@ -117,6 +117,7 @@ footer {
     padding: 5px 10px;
     background-color: var(--primary);
     color: var(--background);
+    margin-bottom: 0;
 }
 
 footer p {
@@ -242,4 +243,132 @@ figcaption {
     font-family: var(--body-font);
     color: var(--text-color);
     font-size: small;
+}
+
+/* CONTACT PAGE */
+.contact-detail {
+    width: 100%;
+    margin: 15px 0;
+    padding: 0 auto;
+    text-align: center;
+}
+
+.contact-detail h4 {
+    font-family: var(--body-font);
+}
+
+.grid-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.map-container iframe {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 0;
+    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.4);
+}
+
+.form-group form {
+    display: grid;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 5px;
+}
+
+.client-detail label {
+    padding: 3px 0;
+    font-family: var(--body-font);
+    padding: 5px 0;
+    margin: auto 0;
+}
+
+.client-detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 5px;
+}
+
+.client-detail input {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.radio-list {
+    display: flex;
+    align-items: center;
+}
+
+.radio-list input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.radio-list label {
+    line-height: 1;
+}
+
+.form-group textarea {
+    font-family: var(--body-font);
+    font-size: 1rem;
+    margin: 2px 0;
+    padding: 5px;
+}
+
+.checkbox-item {
+    margin: 10px 0 0;
+}
+
+.checkbox-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.checkbox-item label {
+    line-height: 1;
+}
+
+.form-group button {
+    margin: 15px 30px;
+    padding: 5px;
+}
+
+.employees {
+    background-color: var(--accent-2);
+    text-align: center;
+    margin: 10px 0;
+
+    font-family: var(--body-font);
+}
+
+.employees h2 {
+    padding: 5px;
+}
+
+.emp-profiles {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 0 20px;
+}
+
+.emp-profiles figure img {
+    width: 150px;
+    background-color: var(--background);
+}
+
+.emp-profiles figcaption {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
 }
