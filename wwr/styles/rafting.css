@@ -153,7 +153,7 @@ h2 {
 
 /* ABOUT PAGE */
 /* Company's name - White Water Rafting */
-h1 {
+.hero h1 {
     position: absolute;
     top: 15px;
     width: 100%;
@@ -249,12 +249,21 @@ figcaption {
 .contact-detail {
     width: 100%;
     margin: 15px 0;
-    padding: 0 auto;
+    padding: 0;
     text-align: center;
 }
 
-.contact-detail h4 {
+.contact-detail h1 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+}
+
+.contact-detail p {
     font-family: var(--body-font);
+    margin: 0;
+    padding: 2px 0 0;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .grid-group {
