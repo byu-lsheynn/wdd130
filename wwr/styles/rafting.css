@@ -249,7 +249,6 @@ figcaption {
 .contact-detail {
     width: 100%;
     margin: 15px 0;
-    padding: 0;
     text-align: center;
 }
 
@@ -290,7 +289,6 @@ figcaption {
 }
 
 .client-detail label {
-    padding: 3px 0;
     font-family: var(--body-font);
     padding: 5px 0;
     margin: auto 0;
