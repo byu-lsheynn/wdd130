@@ -22,7 +22,11 @@
     /* accent font - buttons and menus */
 }
 
-/* BASIC LAYOUT ACROSS THE WEBSITE */
+/* =============================== */
+/* HEADER, FOOTER and BASIC STYLES */
+/*       across the website        */
+/* =============================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +41,7 @@ footer {
     margin: 0 auto;
 }
 
-/* Body */
+/* ----- Body ----- */
 body {
     /* font */
     font-family: var(--body-font);
@@ -47,7 +51,7 @@ body {
     background-color: var(--background);
 }
 
-/* Header */
+/* ----- Header ----- */
 header {
     display: grid;
     align-items: center;
@@ -58,12 +62,13 @@ header {
     padding: 10px 20px;
 }
 
+/* ----- White Water Rafting Logo ----- */
 header img {
     width: 120px;
     margin-left: 20px;
 }
 
-/* Nav */
+/* ----- Header Nav ----- */
 header nav {
     display: flex;
     justify-content: space-around;
@@ -91,7 +96,7 @@ p {
     padding: 5px;
 }
 
-/* Footer */
+/* ----- Footer ----- */
 footer {
     display: flex;
     align-items: center;
@@ -112,6 +117,7 @@ footer p {
     font-weight: bold;
 }
 
+/* ----- Social Media Icons ----- */
 .socialmedia {
     display: flex;
     gap: 15px;
@@ -125,343 +131,659 @@ footer p {
     display: block;
 }
 
-/* HOME PAGE */
-/* Hero Section */
+/* =============== */
+/* HOME PAGE STYLE */
+/* =============== */
+
+/* -- HERO SECTION -- */
 .home-hero {
     position: relative;
-    max-width: 900px;
-    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.2);
 }
 
 .home-hero img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.7);
 }
 
 .home-hero-content {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 70%;
     transform: translate(-50%, -50%);
+
+    /* -- Design styling -- */
+    background-color: rgb(31, 78, 121, 0.85);
     text-align: center;
-    color: var(--background);
+    padding: 20px 40px;
+    width: 80%;
+    max-width: 600px;
 }
 
+/* -- Heading -- */
 .home-hero-content h1 {
-    font-size: 3rem;
     font-family: var(--heading-font);
     color: var(--background);
+    font-size: 3rem;
+    margin-bottom: 10px;
+    padding: 0;
+    position: static;
+    background-color: transparent;
 }
 
-/* Newsletter Section */
+.home-hero-content p {
+    font-family: var(--body-font);
+    color: var(--accent-2);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* -- NEWSLETTER SECTION (Grid Layout) -- */
 .newsletter {
     background-color: var(--accent-2);
-    padding: 20px;
-    max-width: 900px;
-    margin: 10 auto;
+    margin: 20px auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 30px;
 }
 
 .newsletter h2 {
-    text-align: center;
+    font-family: var(--heading-font);
     color: var(--primary);
+    font-size: 2rem;
+    margin: 0;
 }
 
 .newsletter form {
     display: flex;
     gap: 10px;
-    justify-content: center;
 }
 
-/* Call-to-Action Section */
+.newsletter input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    font-family: var(--body-font);
+}
+
+.newsletter button {
+    background-color: var(--primary);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+
+    color: var(--background);
+    font-family: var(--nav-font);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: var(--accent-1);
+}
+
+/* -- CALL-TO-ACTION SECTION -- */
 .call-to-action {
-    background-color: var(--primary-accent);
-    padding: 20px;
-    max-width: 900px;
-    margin: 10px auto;
+    background-color: var(--background);
     text-align: center;
+    padding: 50px 20px;
+    margin: 20px auto;
+}
+
+.call-to-action h2 {
+    font-family: var(--heading-font);
+    color: var(--primary);
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.call-to-action p {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-bottom: 25px;
 }
 
 .call-to-action .button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: var(--primary);
+    padding: 15px 35px;
+    background-color: var(--accent-1);
+
     color: var(--background);
+    font-family: var(--nav-font);
+    font-weight: bold;
     text-decoration: none;
+    text-transform: uppercase;
     border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0, 0.2);
 }
 
-/* Grid Layout Section */
+.call-to-action .button:hover {
+    background-color: var(--primary);
+    transform: scale(1.05);
+}
+
+/* -- PURPOSE & OFFERINGS (Grid Layout) -- */
 .grid-layout {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    max-width: 900px;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .grid-item {
-    /* background-color: var(--background); */
-    padding: 20px;
-    border-radius: 5px;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgb(0, 0, 0, 0.1);
+    border-bottom: 4px solid var(--primary);
 }
 
 .grid-item img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
 }
 
-/* ABOUT PAGE */
-.hero,
-section,
-footer {
-    /* border: 1px solid var(--primary); */
-    margin: 5px auto;
+.grid-item-content {
+    padding: 20px;
 }
 
-.history,
-.adventure {
-    /* border: 1px solid var(--primary); */
-    width: 100%;
-}
-
-.history h2,
-.adventure h2 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* Headings */
-h1,
-h2 {
+.grid-item-content h3 {
     font-family: var(--heading-font);
     color: var(--primary);
+    margin-top: 0;
 }
 
-/* Company's name - White Water Rafting */
-.hero h1 {
-    position: absolute;
-    top: 15px;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background-color: var(--primary-accent);
+.grid-item-content p {
+    font-family: var(--body-font);
+    line-height: 1.6;
     color: var(--text-color);
 }
 
-/* Main */
-/* Class: Hero */
-.hero {
+/* ========================== */
+/* ABOUT PAGE SPECIFIC STYLES */
+/* ========================== */
+
+/* -- ABOUT HERO SECTION -- */
+.about-hero {
     position: relative;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.hero img {
-    display: block;
+.about-hero img[alt="banner"] {
     width: 100%;
-    height: auto;
+    height: 400;
+    object-fit: cover;
+    display: block;
 }
 
-.hero article {
-    /* box */
+.about-hero h1 {
     position: absolute;
-    text-align: left;
-    top: 350px;
-    margin: 0 30px;
-    background-color: var(--accent-1);
-    padding: 8px;
-    border-left: 6px solid rgb(231, 76, 60);
-
+    top: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgb(31, 78, 121, 0.7);
     color: var(--background);
+    font-family: var(--heading-font);
+    padding: 15px;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
-.hero article p {
-    font-weight: 500;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    margin: 0 5px;
+/* -- Mission Box -- */
+.about-hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: var(--accent-1);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.3);
 }
 
-.hero article img {
-    float: right;
-    width: 160px;
-    margin: 5px 8px 5px 0;
-    padding: 0;
-    box-shadow: 0 0 10px var(--accent-2);
-    border-radius: 5px;
+.about-hero article p {
+    color: var(--background);
+    margin: 0;
+    line-height: 1.3;
+    font-size: 1.1rem;
+    font-weight: 550;
+    text-align: left;
 }
 
-/* History */
+.about-hero article img {
+    border: 4px solid var(--background);
+    flex-shrink: 0;
+}
+
+/* -- HISTORY SECTION -- */
+.history {
+    max-width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.history h2 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
 .history-content {
     display: grid;
-    grid-template-columns: 1fr .8fr 1fr;
-    gap: 5px;
+    grid-template-columns: 1fr 300px 1fr;
     align-items: center;
-    padding: 0 20px 10px;
+    gap: 20px;
+    text-align: left;
 }
 
 .history-content img {
     width: 100%;
-    height: auto;
-    box-shadow: 0 0 10px var(--accent-2);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
 }
 
-/* Class: Adventures */
+/* -- ADVENTURE CONTAINER (Horizontal Cards) */
+.adventure {
+    background-color: var(--accent-2);
+    padding: 40px 20px 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.adventure h2 {
+    margin-bottom: 30px;
+    color: var(--primary);
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
 .adventure-container {
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 0 20px;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-/* Figure */
-figure {
-    margin: 5px 0 15px;
-    text-align: center;
-    flex: 1;
-
+.adventure-container figure {
+    margin: 0;
+    background-color: var(--background);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+    width: 160px;
+    transition: transform 0.3s;
 }
 
-figure img {
+.adventure-container figure:hover {
+    transform: scale(1.05)
+}
+
+.adventure-container img {
     width: 100%;
-    box-shadow: 0 0 8px var(--primary);
+    height: 200px;
+    object-fit: cover;
+    border-radius: 3px;
 }
 
-figcaption {
-    font-family: var(--body-font);
+.adventure-container figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary);
+    cursor: default;
+}
+
+/* ========================== */
+/* TRIPS PAGE SPECIFIC STYLES */
+/* ========================== */
+
+/* -- Trip Page main -- */
+.trip-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* -- Trip-hero Section -- */
+.trips-hero {
+    background-color: var(--accent-2);
+    padding: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.trips-hero p {
     color: var(--text-color);
-    font-size: small;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
-/* CONTACT PAGE */
-.contact-detail {
-    width: 100%;
-    margin: 15px 0;
+/* -- Trip-description Section--  */
+.trips-cta-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent-1);
+    color: var(--background);
+    text-decoration: none;
+
+    font-family: var(--nav-font);
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid rgb(231, 76, 60);
+    transition: background-color 0.3s ease;
+}
+
+.trips-cta-btn:hover {
+    background-color: rgb(231, 76, 60);
+    color: var(--background);
+}
+
+.trip-description h2 {
     text-align: center;
+    margin-bottom: 15px;
+}
+
+.trip-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    background-color: var(--background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
+}
+
+.trip-right {
+    flex-direction: row-reverse;
+}
+
+.trip-img {
+    flex: 1 1 45%;
+    max-width: 45%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 0 8px var(--accent-2);
+}
+
+.trip-text {
+    flex: 1 1 50%;
+}
+
+.trip-text h3 {
+    font-family: var(--nav-font);
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+/* -- Trip Schedule Section -- */
+.trip-schedule {
+    margin: 30px 0;
+}
+
+.trip-schedule h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* -- Trip Schedule Table -- */
+.trip-schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgb(244, 249, 251);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.1);
+}
+
+/* -- Table Header Styles -- */
+.trip-schedule-table th {
+    background-color: var(--primary);
+    color: var(--background);
+    font-family: var(--nav-font);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 12px;
+}
+
+/* -- Table Row Styles -- */
+.trip-schedule-table td {
+    padding: 12px;
+    font: var(--body-font);
+    border-bottom: 1px solid rgb(43, 43, 43);
+}
+
+/* -- Styles the 4th column (Price) for every row -- */
+.trip-schedule-table tbody td:nth-child(4) {
+    font-weight: bold;
+    color: var(--accent-1);
+}
+
+/* -- Column Specific Width Adjustments -- */
+.table-trip-name {
+    width: 30%;
+}
+
+.table-class,
+.table-duration {
+    width: 15%;
+}
+
+.table-price {
+    width: 15%;
+}
+
+.table-departures {
+    width: 25%;
+}
+
+/* =========================== */
+/* CONTACT PAGE SPECIFIC STYLE */
+/* =========================== */
+
+/* -- Header Contact Details */
+.contact-detail {
+    text-align: center;
+    background-color: var(--accent-2);
+    color: var(--primary);
+    padding: 40px 20px;
+    margin: 5px 0 30px;
+    border-bottom: 4px solid var(--primary-accent);
+    border-radius: 5px;
 }
 
 .contact-detail h1 {
     font-family: var(--heading-font);
-    color: var(--primary);
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    position: static;
+    background-color: transparent;
 }
 
 .contact-detail p {
+    margin: 2px 0;
+    font-size: 1.2rem;
     font-family: var(--body-font);
-    margin: 0;
-    padding: 2px 0 0;
-    font-weight: bold;
-    font-size: 1.1rem;
+    color: var(--text-color);
 }
 
+/* -- Grid Group (Map & Form) -- */
 .grid-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    align-items: start;
-    max-width: 1000px;
-    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
+/* -- Map Container Styling -- */
 .map-container iframe {
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
+    min-height: 450px;
     border: 0;
-    box-shadow: 1px 1px 2px rgb(0, 0, 0, 0.4);
+    box-shadow: 0 4px 12px rgb(0, 0, 0, 0.1);
+}
+
+/* -- Form Group -- */
+.form-group {
+    padding: 25px;
 }
 
 .form-group form {
-    display: grid;
-    width: 100%;
-    margin: 20px auto;
-    padding: 0 5px;
-}
-
-.client-detail label {
-    font-family: var(--body-font);
-    padding: 5px 0;
-    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .client-detail {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
-.client-detail input {
-    margin-left: 10px;
+.form-group label {
+    font-family: var(--nav-font);
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid var(--primary-accent);
+    font-family: var(--body-font);
     font-size: 1rem;
+}
+
+/* -- Radio Buttons Layout -- */
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 0;
 }
 
 .radio-list {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
-.radio-list input[type="radio"] {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-    cursor: pointer;
-    flex-shrink: 0;
-}
-
-.radio-list label {
-    line-height: 1;
-}
-
-.form-group textarea {
-    font-family: var(--body-font);
-    font-size: 1rem;
-    margin: 2px 0;
-    padding: 5px;
-}
-
+/* -- Checkbox Style -- */
 .checkbox-item {
-    margin: 10px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
 }
 
+/* -- Radio Button and Checkbox Resizing -- */
+.radio-list input[type="radio"],
 .checkbox-item input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
+    transform: scale(1.4);
+    margin-right: 8px;
     cursor: pointer;
-    flex-shrink: 0;
+    accent-color: var(--primary);
 }
 
+.radio-list label,
 .checkbox-item label {
-    line-height: 1;
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: 1.1rem;
 }
 
 .form-group button {
-    margin: 15px 30px;
-    padding: 5px;
+    background-color: var(--accent-1);
+    padding: 13px;
+    border: none;
+    border-radius: 5px;
+
+    color: var(--background);
+    font-family: var(--nav-font);
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.employees {
-    background-color: var(--accent-2);
-    text-align: center;
-    margin: 10px 0;
+.form-group button:hover {
+    background-color: var(--primary);
+}
 
-    font-family: var(--body-font);
+/* -- Employees Section -- */
+.employees {
+    text-align: center;
+    background-color: var(--accent-2);
+    padding: 40px 20px;
+    margin: 20px -10px 5px;
+    border-top: 4px solid var(--primary-accent);
 }
 
 .employees h2 {
-    padding: 5px;
+    margin-bottom: 30px;
+    font-family: var(--heading-font);
+    color: var(--primary);
+    font-size: 2.2rem;
 }
 
 .emp-profiles {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.emp-profiles figure img {
-    width: 150px;
+.emp-profiles figure {
+    margin: 0;
     background-color: var(--background);
+    pad: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.emp-profiles figure:hover {
+    transform: translateY(-5px);
+}
+
+.emp-profiles img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border: 4px;
 }
 
 .emp-profiles figcaption {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-color);
+    margin-top: 15px;
+    font-family: var(--nav-font);
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 1.1rem;
 }
