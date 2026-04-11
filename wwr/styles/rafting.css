@@ -22,7 +22,7 @@
     /* accent font - buttons and menus */
 }
 
-/* Group */
+/* BASIC LAYOUT ACROSS THE WEBSITE */
 * {
     margin: 0;
     padding: 0;
@@ -35,25 +35,6 @@ footer {
     /* limit page width and set center */
     max-width: 900px;
     margin: 0 auto;
-}
-
-.hero,
-section,
-footer {
-    /* border: 1px solid var(--primary); */
-    margin: 5px auto;
-}
-
-.history,
-.adventure {
-    /* border: 1px solid var(--primary); */
-    width: 100%;
-}
-
-.history h2,
-.adventure h2 {
-    text-align: center;
-    margin-top: 10px;
 }
 
 /* Body */
@@ -144,6 +125,112 @@ footer p {
     display: block;
 }
 
+/* HOME PAGE */
+/* Hero Section */
+.home-hero {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.home-hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.home-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--background);
+}
+
+.home-hero-content h1 {
+    font-size: 3rem;
+    font-family: var(--heading-font);
+    color: var(--background);
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: var(--accent-2);
+    padding: 20px;
+    max-width: 900px;
+    margin: 10 auto;
+}
+
+.newsletter h2 {
+    text-align: center;
+    color: var(--primary);
+}
+
+.newsletter form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Call-to-Action Section */
+.call-to-action {
+    background-color: var(--primary-accent);
+    padding: 20px;
+    max-width: 900px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.call-to-action .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--background);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Grid Layout Section */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+.grid-item {
+    /* background-color: var(--background); */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* ABOUT PAGE */
+.hero,
+section,
+footer {
+    /* border: 1px solid var(--primary); */
+    margin: 5px auto;
+}
+
+.history,
+.adventure {
+    /* border: 1px solid var(--primary); */
+    width: 100%;
+}
+
+.history h2,
+.adventure h2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
 /* Headings */
 h1,
 h2 {
@@ -151,7 +238,6 @@ h2 {
     color: var(--primary);
 }
 
-/* ABOUT PAGE */
 /* Company's name - White Water Rafting */
 .hero h1 {
     position: absolute;
