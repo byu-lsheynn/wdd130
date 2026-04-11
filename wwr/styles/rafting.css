@@ -611,7 +611,7 @@ footer p {
     background-color: var(--accent-2);
     color: var(--primary);
     padding: 40px 20px;
-    margin: 5px 0 30px;
+    margin-bottom: 30px;
     border-bottom: 4px solid var(--primary-accent);
     border-radius: 5px;
 }
